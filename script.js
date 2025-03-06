@@ -159,7 +159,7 @@ function getNextCard() {
 
 function showNextCard() {
     if (flashcards.length === 0) {
-        document.querySelector('.question').textContent = "Henüz kart eklenmemiş!";
+        document.querySelector('.question').textContent = "No Cart added!";
         document.querySelector('.input-area').style.display = 'none';
         return;
     }
@@ -277,15 +277,15 @@ function showProgress() {
             <div class="text-white space-y-4">
                 <div class="flex items-center gap-3">
                     <i class="fas fa-chart-bar text-orange-500 text-lg w-6"></i>
-                    <span>Toplam Deneme: ${totalAttempts}</span>
+                    <span>Total Attempts: ${totalAttempts}</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <i class="fas fa-check-circle text-orange-500 text-lg w-6"></i>
-                    <span>Başarılı Deneme: ${successfulAttempts}</span>
+                    <span>Successful Attempts: ${successfulAttempts}</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <i class="fas fa-clock text-orange-500 text-lg w-6"></i>
-                    <span>Son Çalışma: ${timeStr}</span>
+                    <span>Last time you check: ${timeStr}</span>
                 </div>
             </div>
         `;
@@ -410,13 +410,13 @@ function showAttemptHistory(card) {
             
             dot.innerHTML = `
                 <i class="fas fa-circle text-orange-500 text-xs" 
-                   title="Başarılı deneme"></i>
+                   title="Successful Attempts"></i>
             `;
         } else {
             
             dot.innerHTML = `
                 <i class="far fa-circle text-orange-500 text-xs" 
-                   title="Başarısız deneme"></i>
+                   title="Failed Attempts"></i>
             `;
         }
         historyContainer.appendChild(dot);
