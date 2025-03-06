@@ -1,0 +1,182 @@
+[
+    {
+        "question": "Pi sayısının ilk 4 basamağı nedir?",
+        "answer": "3.141",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "5 faktöriyel kaçtır?",
+        "answer": "120",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "3 üzeri 4 kaçtır?",
+        "answer": "81",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Karekök 144 kaçtır?",
+        "answer": "12",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "log(100) kaçtır? (10 tabanında)",
+        "answer": "2",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "Bir dairenin çevresi formülü nedir? (r=yarıçap)",
+        "answer": "2πr",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Bir küpün hacim formülü nedir? (a=kenar)",
+        "answer": "a³",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "sin(30°) değeri kaçtır?",
+        "answer": "0.5",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "cos(60°) değeri kaçtır?",
+        "answer": "0.5",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "7'nin 2 tabanında logaritması kaçtır?",
+        "answer": "2.8074",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 3
+    },
+    {
+        "question": "Bir üçgenin iç açıları toplamı kaç derecedir?",
+        "answer": "180",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "4! kaçtır?",
+        "answer": "24",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Pisagor teoreminin formülü nedir?",
+        "answer": "a²+b²=c²",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "e sayısının ilk 4 basamağı nedir?",
+        "answer": "2.718",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "Bir dairenin alanı formülü nedir? (r=yarıçap)",
+        "answer": "πr²",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "2⁸ kaçtır?",
+        "answer": "256",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Karekök 169 kaçtır?",
+        "answer": "13",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "tan(45°) değeri kaçtır?",
+        "answer": "1",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "Bir kürenin yüzey alanı formülü nedir? (r=yarıçap)",
+        "answer": "4πr²",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "16'nın karekökünün karekökü kaçtır?",
+        "answer": "2",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    }
+]

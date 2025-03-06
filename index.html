@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html::before {
+                content: "";
+                background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/16a21711-a508-454a-91f1-faa0b602734c/d3h9xlg-00279182-a21b-4d1f-98b4-ba2474f5e6a3.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE2YTIxNzExLWE1MDgtNDU0YS05MWYxLWZhYTBiNjAyNzM0Y1wvZDNoOXhsZy0wMDI3OTE4Mi1hMjFiLTRkMWYtOThiNC1iYTI0NzRmNWU2YTMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Dn3tZ6c8qQodCLsWSH2y87txpMao_YXd04K53iUmcUg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: fixed;
+                bottom: 0;
+                left: 70%;
+                width: 30%;
+                height: 35%;
+                margin: 0;
+                user-select: none; 
+                z-index: 1000; 
+            }
+    </style>
+</head>
+<body class="bg-black min-h-screen">
+    <header class="bg-black border-b border-orange-500">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6bae188-2fb7-4503-8e93-1edb30ffecfd/d2zac7k-f5bcf697-6764-417d-b4d2-7d17cc2c5de1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M2YmFlMTg4LTJmYjctNDUwMy04ZTkzLTFlZGIzMGZmZWNmZFwvZDJ6YWM3ay1mNWJjZjY5Ny02NzY0LTQxN2QtYjRkMi03ZDE3Y2MyYzVkZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.kctfgoEEzcnpcbVkNCNzsVDbeCNvntme2kAZvwvJnUU" alt="Logo" class="h-8 w-8 filter invert">
+                    <span class="text-orange-500 font-bold text-xl">Nieche's Flashcards</span>
+                </div>
+
+                <div class="flex-1 max-w-md mx-4">
+                    <select id="deckSelect" class="w-full bg-zinc-900 text-white border border-zinc-800 rounded-lg px-4 py-2 focus:outline-none focus:border-orange-500">
+                        <option value="">Choose a Deck</option>
+                        <option value="programming.json">Programming</option>
+                        <option value="tarih.json">Tarih</option>
+                        <option value="ingilizce.json">Ingilizce</option>
+                        <option value="matematik.json">Matematik</option>
+                    </select>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center space-x-4">
+                        <a href="https://github.com/fevzikilas" target="_blank" class="text-zinc-500 hover:text-orange-500 transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/fevzikilas" target="_blank" class="text-zinc-500 hover:text-orange-500 transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://huggingface.co/nieche" target="_blank" class="text-zinc-500 hover:text-orange-500 transition-colors">
+                            <i class="fas fa-robot text-xl"></i>
+                        </a>
+                    </div>
+
+                    <div class="h-6 w-px bg-zinc-800"></div>
+
+                    <div class="flex items-center space-x-3">
+                        <button onclick="resetProgress()" 
+                                class="flex items-center space-x-1.5 bg-black hover:bg-zinc-900 text-orange-500 hover:text-orange-400 px-3 py-1.5 rounded-md border border-orange-500 transition duration-300 text-sm">
+                            <i class="fas fa-redo-alt text-xs"></i>
+                            <span>Reset</span>
+                        </button>
+                        <button onclick="showProgress()" 
+                                class="flex items-center space-x-1.5 bg-black hover:bg-zinc-900 text-orange-500 hover:text-orange-400 px-3 py-1.5 rounded-md border border-orange-500 transition duration-300 text-sm">
+                            <i class="fas fa-chart-line text-xs"></i>
+                            <span>Stats</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8 relative">
+        <button onclick="previousCard()" class="fixed left-[5%] top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-zinc-900 text-orange-500 hover:text-orange-400 p-4 transition duration-300 hidden md:block">
+            <i class="fas fa-chevron-left text-2xl"></i>
+        </button>
+        
+        <button onclick="nextCard()" class="fixed right-[5%] top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-zinc-900 text-orange-500 hover:text-orange-400 p-4 transition duration-300 hidden md:block">
+            <i class="fas fa-chevron-right text-2xl"></i>
+        </button>
+
+        <div class="max-w-2xl mx-auto">
+            <div class="flashcard bg-black rounded-xl p-8 shadow-2xl border-2 border-orange-500">
+                <div class="question text-white text-2xl font-semibold text-center mb-8"></div>
+                
+                <div class="input-area flex flex-col md:flex-row gap-4 mb-6">
+                    <input type="text" 
+                           id="answer-input" 
+                           placeholder="Awaiting your answer" 
+                           autocomplete="off"
+                           autocorrect="off"
+                           autocapitalize="off"
+                           spellcheck="false"
+                           class="flex-1 bg-zinc-900 text-white p-3 rounded-lg border-2 border-zinc-800 focus:outline-none focus:border-orange-500">
+                    <button onclick="checkAnswer()" 
+                            class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        👍
+                    </button>
+                </div>
+                
+                <div class="feedback text-xl text-center"></div>
+                <div class="correct-answer text-orange-500 font-medium text-lg text-center mt-4 flex items-center justify-center gap-2">
+                </div>
+                <div class="attempts text-orange-500 text-center mt-2"></div>
+                
+                <div class="text-center mt-6">
+                    <button onclick="nextCard()" id="understood-btn" 
+                            class="hidden bg-black hover:bg-zinc-900 text-orange-500 hover:text-orange-400 px-6 py-3 rounded-lg border-2 border-orange-500 transition duration-300 flex items-center gap-2 mx-auto">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Anladım</span>
+                    </button>
+                </div>
+
+                <div class="flex justify-center items-center space-x-4 mt-8 md:hidden">
+                    <button onclick="previousCard()" class="bg-black hover:bg-zinc-900 text-orange-500 hover:text-orange-400 font-bold py-2 px-4 rounded-lg transition duration-300">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button onclick="nextCard()" class="bg-black hover:bg-zinc-900 text-orange-500 hover:text-orange-400 font-bold py-2 px-4 rounded-lg transition duration-300">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="attempt-history flex items-center justify-center gap-2 mt-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

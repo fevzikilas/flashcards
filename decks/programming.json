@@ -1,0 +1,182 @@
+[
+    {
+        "question": "JavaScript'te bir array'in sonuna eleman eklemek için hangi metod kullanılır?",
+        "answer": "push",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Python'da string formatlamak için kullanılan f-string syntax'ı nasıldır?",
+        "answer": "f\"\"",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Git'te son commit'i geri almak için hangi komut kullanılır?",
+        "answer": "git reset HEAD~1",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "React'ta state güncellemek için hangi hook kullanılır?",
+        "answer": "useState",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "SQL'de birden fazla tabloyu birleştirmek için hangi keyword kullanılır?",
+        "answer": "JOIN",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Python'da bir listeyi sıralamak için hangi metod kullanılır?",
+        "answer": "sort",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "JavaScript'te Promise'in üç durumu nelerdir?",
+        "answer": "pending fulfilled rejected",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "CSS'te bir elementi ortalamanın flexbox yöntemi nedir?",
+        "answer": "display: flex; justify-content: center; align-items: center;",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "Docker container'ı başlatmak için hangi komut kullanılır?",
+        "answer": "docker run",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Node.js'de bir paketi yüklemek için hangi komut kullanılır?",
+        "answer": "npm install",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Python'da virtual environment oluşturma komutu nedir?",
+        "answer": "python -m venv",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Git'te yeni bir branch oluşturmak için hangi komut kullanılır?",
+        "answer": "git branch",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "React'ta side effect'ler için hangi hook kullanılır?",
+        "answer": "useEffect",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "JavaScript'te async bir fonksiyonun dönüş tipi nedir?",
+        "answer": "Promise",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "MongoDB'de veritabanı oluşturma komutu nedir?",
+        "answer": "use database_name",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "CSS Grid'de satır oluşturmak için hangi property kullanılır?",
+        "answer": "grid-template-rows",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 2
+    },
+    {
+        "question": "Linux'ta dosya izinlerini değiştirmek için hangi komut kullanılır?",
+        "answer": "chmod",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "TypeScript'te tip tanımlama syntax'ı nasıldır?",
+        "answer": "variable: type",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "Redis'te bir key-value çifti nasıl set edilir?",
+        "answer": "SET key value",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    },
+    {
+        "question": "HTTP POST metodunun amacı nedir?",
+        "answer": "Yeni kaynak oluşturmak",
+        "attempts": 0,
+        "successRate": 0,
+        "lastAttempts": [],
+        "lastSeen": null,
+        "difficulty": 1
+    }
+]
