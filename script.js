@@ -231,7 +231,7 @@ document.getElementById('deckSelect').addEventListener('change', function(e) {
 
 function resetProgress() {
     const deckSelect = document.getElementById('deckSelect');
-    if (deckSelect.value && confirm('Bu deck için tüm ilerlemenizi sıfırlamak istediğinize emin misiniz?')) {
+    if (deckSelect.value && confirm('Are you sure you want to reset all your progress for this deck?')) {
         localStorage.removeItem(deckSelect.value);
         loadDeck(deckSelect.value);
     }
